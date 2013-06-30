@@ -11,10 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130630165829) do
+ActiveRecord::Schema.define(version: 20130630173443) do
 
   create_table "fields", force: true do |t|
-    t.string   "address"
+    t.string   "street"
     t.string   "city"
     t.string   "country"
     t.datetime "created_at"
