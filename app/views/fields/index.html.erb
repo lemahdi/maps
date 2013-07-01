@@ -15,7 +15,7 @@
   <tbody>
     <% @fields.each do |field| %>
     <tr>
-      <td><%= field.address %></td>
+      <td><%= field.street %></td>
       <td><%= field.city %></td>
       <td><%= field.country %></td>
       <td><%= link_to 'Show', field %></td>
@@ -29,3 +29,7 @@
 <br />
 
 <%= link_to 'New Field', new_field_path %>
+
+<br />
+
+<%= gmaps4rails(@json) %>

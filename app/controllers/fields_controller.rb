@@ -5,6 +5,7 @@ class FieldsController < ApplicationController
   # GET /fields.json
   def index
     @fields = Field.all
+    @json = @fields.to_gmaps4rails
   end
 
   # GET /fields/1
@@ -69,6 +70,6 @@ class FieldsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def field_params
-      params.require(:field).permit(:address, :city, :country)
+      params.require(:field).permit(:street, :city, :country)
     end
 end
