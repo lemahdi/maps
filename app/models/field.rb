@@ -1,4 +1,5 @@
 class Field < ActiveRecord::Base
+	attr_accessible :street, :city, :country, :latitude, :longitude
 	acts_as_gmappable
 
 	def gmaps4rails_address
