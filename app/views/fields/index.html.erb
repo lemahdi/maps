@@ -18,7 +18,7 @@
       <td><%= field.street %></td>
       <td><%= field.city %></td>
       <td><%= field.country %></td>
-      <td><%= link_to 'Show', field %></td>
+      <td><%= link_to 'Show', field, 'data-no-turbolink' => true %></td>
       <td><%= link_to 'Edit', edit_field_path(field) %></td>
       <td><%= link_to 'Destroy', field, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
